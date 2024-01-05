@@ -1,0 +1,48 @@
+﻿@using Tatil_Seyahat_Sitesi.Models.Class
+@model List<Hakkımızda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>Hakkımızda</h3>
+            @foreach (var x in Model)
+            {
+        <img src="@x.Fotourl" alt="" />
+
+
+
+                        <h1>Hoş Geldiniz! Biz Kimiz?</h1>
+                                        <br />
+                                        <p>
+                                            Merhaba! Biz [Sitenizin Adı] ekibi olarak, seyahat tutkunu herkesi unutulmaz anılar biriktirmeye davet ediyoruz. [Sitenizin Adı], dünyanın dört bir yanındaki heyecan verici destinasyonlarla sizi buluşturmayı hedefleyen bir tatil seyahat platformudur.
+                                            Vizyonumuz
+                                        </p>
+
+                                            <h1>Vizyonunuz</h1> 
+                                            
+                                            <p>ile dünya genelinde benzersiz ve özel tatil deneyimleri sunmayı hedefliyoruz. Seyahat etmenin sadece bir yerden başka bir yere gitmek olmadığını biliyoruz; bu, yeni kültürler keşfetmek, farklı lezzetleri tatmak ve unutulmaz anılar biriktirmekle ilgilidir. Biz, bu deneyimleri sizin için daha erişilebilir ve unutulmaz kılmak için buradayız.</p>
+                                            <h1>Misyonumuz</h1> 
+
+                                           <p> [Sitenizin Adı], müşterilerimize en iyi tatil deneyimini sunmak için çaba sarf eden bir ekip tarafından yönetilmektedir. Her bir seyahat planınızı kişiselleştiriyor, sizlere özel öneriler sunuyor ve seyahatiniz boyunca destek sağlıyoruz. Sadece bir tatil planı değil, sizin için özel bir macera yaratmak istiyoruz.
+
+                                            <h1>Neden Biz?</h1>
+
+                                           <p>
+                                               Geniş Destinasyon Portföyü: [Sitenizin Adı], dünya genelinde çeşitli destinasyonlarda size benzersiz tatil fırsatları sunar.<br />
+                                               Kişiselleştirilmiş Hizmet: Seyahat planlarınızı kişiselleştirmek, ihtiyaçlarınıza özel çözümler sunmak bizim önceliğimizdir.<br />
+                                               Güvenilirlik ve Kalite: [Sitenizin Adı], kaliteli hizmeti ve güvenilir bilgiyi bir araya getirerek sizlere güvenli bir seyahat deneyimi sunar.<br /><br />
+                                               Sizi [Sitenizin Adı]'de unutulmaz bir seyahatle buluşturmak için sabırsızlanıyoruz. İyi tatiller dileriz!
+                                           </p>
+                                        </p>           
+
+            }
+        </div>
+    </div>
+</div>
+
+
+
